@@ -4,6 +4,10 @@ import SQLiteAdapter from "@nozbe/watermelondb/adapters/sqlite";
 import schema from "./data/models/schema";
 import migrations from "./data/models/migrations";
 import {Database} from "@nozbe/watermelondb";
+import {Product} from "./data/models/product";
+import {Nutriment} from "./data/models/nutriment";
+import {Nutritional_log} from "./data/models/nutritional_log";
+import {User} from "./data/models/user";
 
 export default function App() {
   return (
@@ -26,7 +30,7 @@ const styles = StyleSheet.create({
 const adapter = new SQLiteAdapter({
   schema,
   // (You might want to comment it out for development purposes -- see Migrations documentation)
-  migrations,
+  // migrations,
   // (optional database name or file system path)
   // dbName: 'myapp',
   // (recommended option, should work flawlessly out of the box on iOS. On Android,
@@ -42,6 +46,6 @@ const adapter = new SQLiteAdapter({
 const database = new Database({
   adapter,
   modelClasses: [
-    // Post, // ⬅️ You'll add Models to Watermelon here
+      Product, Nutriment, Nutritional_log, User
   ],
 })
