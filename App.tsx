@@ -1,15 +1,15 @@
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native';
 import SQLiteAdapter from "@nozbe/watermelondb/adapters/sqlite";
-import schema from "./data/models/schema";
-import migrations from "./data/models/migrations";
+import schema from "./src/data/schema";
+import migrations from "./src/data/migrations";
 import {Database} from "@nozbe/watermelondb";
-import {Product} from "./data/models/product";
-import {Nutriment} from "./data/models/nutriment";
-import {Nutritional_log} from "./data/models/nutritional_log";
-import {User} from "./data/models/user";
+import {Product} from "./src/data/models/product";
+import {Nutriment} from "./src/data/models/nutriment";
+import {Nutritional_log} from "./src/data/models/nutritional_log";
+import {User} from "./src/data/models/user";
 import {PaperProvider} from "react-native-paper";
-import Navigation from "./components/navigation";
+import Navigation from "./src/components/navigation";
 
 export default function App() {
   return (

@@ -3,8 +3,8 @@ import renderer, {
     ReactTestInstance,
 } from 'react-test-renderer';
 import App, {database} from "../App";
-import {navigate} from "../lib/navigation";
-import Home from "../screens/home";
+import {navigate} from "../src/lib/navigation";
+import Home from "../src/screens/home";
 
 describe( 'Product integration tests', () => {
     let screen!: ReactTestInstance;
