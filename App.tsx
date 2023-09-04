@@ -1,8 +1,7 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import * as React from 'react';
+import { StyleSheet } from 'react-native';
 import SQLiteAdapter from "@nozbe/watermelondb/adapters/sqlite";
 import schema from "./src/data/schema";
-import migrations from "./src/data/migrations";
 import {Database} from "@nozbe/watermelondb";
 import {Product} from "./src/data/models/product";
 import {Nutriment} from "./src/data/models/nutriment";
