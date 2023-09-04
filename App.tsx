@@ -8,13 +8,14 @@ import {Product} from "./data/models/product";
 import {Nutriment} from "./data/models/nutriment";
 import {Nutritional_log} from "./data/models/nutritional_log";
 import {User} from "./data/models/user";
+import {PaperProvider} from "react-native-paper";
+import Navigation from "./components/navigation";
 
 export default function App() {
   return (
-    <View style={styles.container}>
-      <Text>Open up App.tsx to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
+      <PaperProvider>
+        <Navigation />
+      </PaperProvider>
   );
 }
 
@@ -43,7 +44,7 @@ const adapter = new SQLiteAdapter({
 })
 
 // Then, make a Watermelon database from it!
-const database = new Database({
+export const database = new Database({
   adapter,
   modelClasses: [
       Product, Nutriment, Nutritional_log, User
