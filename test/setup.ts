@@ -1,6 +1,7 @@
 import 'react-native-gesture-handler/jestSetup';
 
 jest.useFakeTimers();
+jest.mock('../src/constants');
 jest.mock(
     '@nozbe/watermelondb/adapters/sqlite/makeDispatcher/index.native.js',
     () => {
@@ -9,10 +10,6 @@ jest.mock(
         );
     },
 );
-
-jest.mock('expo-font');
-jest.mock('expo-asset');
-jest.mock('expo-file-system');
 jest.mock('react-native/Libraries/EventEmitter/NativeEventEmitter');
 jest.mock('react-native-reanimated', () => {
     const Reanimated = require('react-native-reanimated/mock');
@@ -43,7 +40,6 @@ jest.mock('react-native-reanimated', () => {
 //     };
 // });
 
-jest.mock('../src/constants');
 
 // jest.mock('expo-location', () => {
 //     const mod = jest.requireActual('expo-location');

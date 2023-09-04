@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1693849617322" clover="3.2.0">
-  <project timestamp="1693849617322" name="All files">
+<coverage generated="1693850048674" clover="3.2.0">
+  <project timestamp="1693850048674" name="All files">
     <metrics statements="171" coveredstatements="169" conditionals="3" coveredconditionals="1" methods="10" coveredmethods="6" elements="184" coveredelements="176" complexity="0" loc="171" ncloc="171" packages="7" files="10" classes="10"/>
     <package name="nutricore">
       <metrics statements="16" coveredstatements="16" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="1"/>
