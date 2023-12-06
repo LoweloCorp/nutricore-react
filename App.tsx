@@ -1,16 +1,20 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import * as React from 'react';
+import { StyleSheet } from 'react-native';
 import SQLiteAdapter from "@nozbe/watermelondb/adapters/sqlite";
-import schema from "./data/models/schema";
-import migrations from "./data/models/migrations";
+import schema from "./src/data/schema";
 import {Database} from "@nozbe/watermelondb";
+import {Product} from "./src/data/models/product";
+import {Nutriment} from "./src/data/models/nutriment";
+import {Nutritional_log} from "./src/data/models/nutritional_log";
+import {User} from "./src/data/models/user";
+import {PaperProvider} from "react-native-paper";
+import Navigation from "./src/components/navigation";
 
 export default function App() {
   return (
-    <View style={styles.container}>
-      <Text>Open up App.tsx to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
+      <PaperProvider>
+        <Navigation />
+      </PaperProvider>
   );
 }
 
@@ -26,7 +30,7 @@ const styles = StyleSheet.create({
 const adapter = new SQLiteAdapter({
   schema,
   // (You might want to comment it out for development purposes -- see Migrations documentation)
-  migrations,
+  // migrations,
   // (optional database name or file system path)
   // dbName: 'myapp',
   // (recommended option, should work flawlessly out of the box on iOS. On Android,
@@ -39,9 +43,9 @@ const adapter = new SQLiteAdapter({
 })
 
 // Then, make a Watermelon database from it!
-const database = new Database({
+export const database = new Database({
   adapter,
   modelClasses: [
-    // Post, // ⬅️ You'll add Models to Watermelon here
+      Product, Nutriment, Nutritional_log, User
   ],
 })
