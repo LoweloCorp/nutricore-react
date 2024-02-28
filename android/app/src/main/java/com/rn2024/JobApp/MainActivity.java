@@ -1,4 +1,4 @@
-package com.healthcore.nutricore;
+package com.rn2024.JobApp;
 
 import android.os.Build;
 import android.os.Bundle;

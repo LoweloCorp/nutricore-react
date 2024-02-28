@@ -6,7 +6,7 @@ import {makeSafeName} from "../../utils/helpers";
 export class Nutriment extends Model {
     public static table = 'nutriments';
     @immutableRelation('products', 'product_id') product?: Product;
-    @field(makeSafeName('calcium')) public calcium?: number;
+    @field(makeSafeName('calcium')) public calcium?: string;
     @field(makeSafeName('calcium_100g')) public calcium_100g?: number;
     @field(makeSafeName('calcium_serving')) public calcium_serving?: number;
     @field(makeSafeName('calcium_unit')) public calcium_unit?: string;

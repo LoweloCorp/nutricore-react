@@ -81,9 +81,9 @@ android {
 
     compileSdkVersion rootProject.ext.compileSdkVersion
 
-    namespace 'com.healthcore.nutricore'
+    namespace 'com.rn2024.JobApp'
     defaultConfig {
-        applicationId 'com.healthcore.nutricore'
+        applicationId 'com.rn2024.JobApp'
         minSdkVersion rootProject.ext.minSdkVersion
         targetSdkVersion rootProject.ext.targetSdkVersion
         versionCode 1

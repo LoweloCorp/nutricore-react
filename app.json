@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "nutricore",
-    "slug": "nutricore",
+    "name": "JobApp",
+    "slug": "JobApp",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -15,18 +15,25 @@
       "**/*"
     ],
     "ios": {
-      "supportsTablet": true,
-      "bundleIdentifier": "com.healthcore.nutricore"
+      "supportsTablet": true
     },
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
       },
-      "package": "com.healthcore.nutricore"
+      "package": "com.rn2024.JobApp"
     },
     "web": {
       "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      "expo-build-properties"
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "03e878f6-9207-4fd7-8caf-2fd099a8f727"
+      }
     }
   }
 }
