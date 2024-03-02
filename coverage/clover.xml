@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1693850048674" clover="3.2.0">
-  <project timestamp="1693850048674" name="All files">
+<coverage generated="1709387008960" clover="3.2.0">
+  <project timestamp="1709387008960" name="All files">
     <metrics statements="171" coveredstatements="169" conditionals="3" coveredconditionals="1" methods="10" coveredmethods="6" elements="184" coveredelements="176" complexity="0" loc="171" ncloc="171" packages="7" files="10" classes="10"/>
-    <package name="nutricore">
+    <package name="nutricore-react">
       <metrics statements="16" coveredstatements="16" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="1"/>
-      <file name="App.tsx" path="/Users/tobiasbarthold/WebstormProjects/nutricore/App.tsx">
+      <file name="App.tsx" path="/Users/tobiasbarthold/IdeaProjects/Lowelo Corporation/nutricore-react/App.tsx">
         <metrics statements="16" coveredstatements="16" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="1"/>
-        <line num="1" count="1" type="stmt"/>
         <line num="2" count="1" type="stmt"/>
         <line num="3" count="1" type="stmt"/>
         <line num="4" count="1" type="stmt"/>
@@ -17,16 +16,17 @@
         <line num="9" count="1" type="stmt"/>
         <line num="10" count="1" type="stmt"/>
         <line num="11" count="1" type="stmt"/>
-        <line num="13" count="1" type="stmt"/>
+        <line num="12" count="1" type="stmt"/>
         <line num="14" count="1" type="stmt"/>
-        <line num="21" count="1" type="stmt"/>
-        <line num="30" count="1" type="stmt"/>
-        <line num="46" count="1" type="stmt"/>
+        <line num="15" count="1" type="stmt"/>
+        <line num="22" count="1" type="stmt"/>
+        <line num="31" count="1" type="stmt"/>
+        <line num="47" count="1" type="stmt"/>
       </file>
     </package>
-    <package name="nutricore.src.components">
+    <package name="nutricore-react.src.components">
       <metrics statements="7" coveredstatements="7" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
-      <file name="navigation.tsx" path="/Users/tobiasbarthold/WebstormProjects/nutricore/src/components/navigation.tsx">
+      <file name="navigation.tsx" path="/Users/tobiasbarthold/IdeaProjects/Lowelo Corporation/nutricore-react/src/components/navigation.tsx">
         <metrics statements="7" coveredstatements="7" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
         <line num="1" count="1" type="stmt"/>
         <line num="2" count="1" type="stmt"/>
@@ -37,18 +37,18 @@
         <line num="9" count="1" type="stmt"/>
       </file>
     </package>
-    <package name="nutricore.src.data">
+    <package name="nutricore-react.src.data">
       <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
-      <file name="schema.ts" path="/Users/tobiasbarthold/WebstormProjects/nutricore/src/data/schema.ts">
+      <file name="schema.ts" path="/Users/tobiasbarthold/IdeaProjects/Lowelo Corporation/nutricore-react/src/data/schema.ts">
         <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
         <line num="1" count="1" type="stmt"/>
         <line num="2" count="1" type="stmt"/>
         <line num="4" count="1" type="stmt"/>
       </file>
     </package>
-    <package name="nutricore.src.data.models">
+    <package name="nutricore-react.src.data.models">
       <metrics statements="124" coveredstatements="124" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
-      <file name="nutriment.ts" path="/Users/tobiasbarthold/WebstormProjects/nutricore/src/data/models/nutriment.ts">
+      <file name="nutriment.ts" path="/Users/tobiasbarthold/IdeaProjects/Lowelo Corporation/nutricore-react/src/data/models/nutriment.ts">
         <metrics statements="95" coveredstatements="95" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
         <line num="1" count="1" type="stmt"/>
         <line num="2" count="1" type="stmt"/>
@@ -146,7 +146,7 @@
         <line num="95" count="1" type="stmt"/>
         <line num="96" count="1" type="stmt"/>
       </file>
-      <file name="nutritional_log.ts" path="/Users/tobiasbarthold/WebstormProjects/nutricore/src/data/models/nutritional_log.ts">
+      <file name="nutritional_log.ts" path="/Users/tobiasbarthold/IdeaProjects/Lowelo Corporation/nutricore-react/src/data/models/nutritional_log.ts">
         <metrics statements="9" coveredstatements="9" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
         <line num="1" count="1" type="stmt"/>
         <line num="2" count="1" type="stmt"/>
@@ -158,7 +158,7 @@
         <line num="9" count="1" type="stmt"/>
         <line num="10" count="1" type="stmt"/>
       </file>
-      <file name="product.ts" path="/Users/tobiasbarthold/WebstormProjects/nutricore/src/data/models/product.ts">
+      <file name="product.ts" path="/Users/tobiasbarthold/IdeaProjects/Lowelo Corporation/nutricore-react/src/data/models/product.ts">
         <metrics statements="12" coveredstatements="12" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
         <line num="1" count="1" type="stmt"/>
         <line num="2" count="1" type="stmt"/>
@@ -173,7 +173,7 @@
         <line num="12" count="1" type="stmt"/>
         <line num="13" count="1" type="stmt"/>
       </file>
-      <file name="user.ts" path="/Users/tobiasbarthold/WebstormProjects/nutricore/src/data/models/user.ts">
+      <file name="user.ts" path="/Users/tobiasbarthold/IdeaProjects/Lowelo Corporation/nutricore-react/src/data/models/user.ts">
         <metrics statements="8" coveredstatements="8" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
         <line num="1" count="1" type="stmt"/>
         <line num="2" count="1" type="stmt"/>
@@ -185,9 +185,9 @@
         <line num="10" count="1" type="stmt"/>
       </file>
     </package>
-    <package name="nutricore.src.lib">
+    <package name="nutricore-react.src.lib">
       <metrics statements="5" coveredstatements="4" conditionals="2" coveredconditionals="1" methods="1" coveredmethods="1"/>
-      <file name="navigation.ts" path="/Users/tobiasbarthold/WebstormProjects/nutricore/src/lib/navigation.ts">
+      <file name="navigation.ts" path="/Users/tobiasbarthold/IdeaProjects/Lowelo Corporation/nutricore-react/src/lib/navigation.ts">
         <metrics statements="5" coveredstatements="4" conditionals="2" coveredconditionals="1" methods="1" coveredmethods="1"/>
         <line num="1" count="1" type="stmt"/>
         <line num="3" count="1" type="stmt"/>
@@ -196,9 +196,9 @@
         <line num="9" count="0" type="stmt"/>
       </file>
     </package>
-    <package name="nutricore.src.screens">
+    <package name="nutricore-react.src.screens">
       <metrics statements="11" coveredstatements="11" conditionals="0" coveredconditionals="0" methods="5" coveredmethods="2"/>
-      <file name="home.tsx" path="/Users/tobiasbarthold/WebstormProjects/nutricore/src/screens/home.tsx">
+      <file name="home.tsx" path="/Users/tobiasbarthold/IdeaProjects/Lowelo Corporation/nutricore-react/src/screens/home.tsx">
         <metrics statements="11" coveredstatements="11" conditionals="0" coveredconditionals="0" methods="5" coveredmethods="2"/>
         <line num="1" count="1" type="stmt"/>
         <line num="2" count="1" type="stmt"/>
@@ -213,9 +213,9 @@
         <line num="28" count="1" type="stmt"/>
       </file>
     </package>
-    <package name="nutricore.src.utils">
+    <package name="nutricore-react.src.utils">
       <metrics statements="5" coveredstatements="4" conditionals="1" coveredconditionals="0" methods="1" coveredmethods="1"/>
-      <file name="helpers.ts" path="/Users/tobiasbarthold/WebstormProjects/nutricore/src/utils/helpers.ts">
+      <file name="helpers.ts" path="/Users/tobiasbarthold/IdeaProjects/Lowelo Corporation/nutricore-react/src/utils/helpers.ts">
         <metrics statements="5" coveredstatements="4" conditionals="1" coveredconditionals="0" methods="1" coveredmethods="1"/>
         <line num="1" count="1" type="stmt"/>
         <line num="3" count="178" type="stmt"/>

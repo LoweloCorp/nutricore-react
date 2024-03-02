@@ -1,0 +1,376 @@
+
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Code coverage report for nutricore-react/src/data/models/nutriment.ts</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../../../../prettify.css" />
+    <link rel="stylesheet" href="../../../../base.css" />
+    <link rel="shortcut icon" type="image/x-icon" href="../../../../favicon.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style type='text/css'>
+        .coverage-summary .sorter {
+            background-image: url(../../../../sort-arrow-sprite.png);
+        }
+    </style>
+</head>
+    
+<body>
+<div class='wrapper'>
+    <div class='pad1'>
+        <h1><a href="../../../../index.html">All files</a> / <a href="index.html">nutricore-react/src/data/models</a> nutriment.ts</h1>
+        <div class='clearfix'>
+            
+            <div class='fl pad1y space-right2'>
+                <span class="strong">100% </span>
+                <span class="quiet">Statements</span>
+                <span class='fraction'>95/95</span>
+            </div>
+        
+            
+            <div class='fl pad1y space-right2'>
+                <span class="strong">100% </span>
+                <span class="quiet">Branches</span>
+                <span class='fraction'>0/0</span>
+            </div>
+        
+            
+            <div class='fl pad1y space-right2'>
+                <span class="strong">100% </span>
+                <span class="quiet">Functions</span>
+                <span class='fraction'>0/0</span>
+            </div>
+        
+            
+            <div class='fl pad1y space-right2'>
+                <span class="strong">100% </span>
+                <span class="quiet">Lines</span>
+                <span class='fraction'>95/95</span>
+            </div>
+        
+            
+        </div>
+        <p class="quiet">
+            Press <em>n</em> or <em>j</em> to go to the next uncovered block, <em>b</em>, <em>p</em> or <em>k</em> for the previous block.
+        </p>
+        <template id="filterTemplate">
+            <div class="quiet">
+                Filter:
+                <input type="search" id="fileSearch">
+            </div>
+        </template>
+    </div>
+    <div class='status-line high'></div>
+    <pre><table class="coverage">
+<tr><td class="line-count quiet"><a name='L1'></a><a href='#L1'>1</a>
+<a name='L2'></a><a href='#L2'>2</a>
+<a name='L3'></a><a href='#L3'>3</a>
+<a name='L4'></a><a href='#L4'>4</a>
+<a name='L5'></a><a href='#L5'>5</a>
+<a name='L6'></a><a href='#L6'>6</a>
+<a name='L7'></a><a href='#L7'>7</a>
+<a name='L8'></a><a href='#L8'>8</a>
+<a name='L9'></a><a href='#L9'>9</a>
+<a name='L10'></a><a href='#L10'>10</a>
+<a name='L11'></a><a href='#L11'>11</a>
+<a name='L12'></a><a href='#L12'>12</a>
+<a name='L13'></a><a href='#L13'>13</a>
+<a name='L14'></a><a href='#L14'>14</a>
+<a name='L15'></a><a href='#L15'>15</a>
+<a name='L16'></a><a href='#L16'>16</a>
+<a name='L17'></a><a href='#L17'>17</a>
+<a name='L18'></a><a href='#L18'>18</a>
+<a name='L19'></a><a href='#L19'>19</a>
+<a name='L20'></a><a href='#L20'>20</a>
+<a name='L21'></a><a href='#L21'>21</a>
+<a name='L22'></a><a href='#L22'>22</a>
+<a name='L23'></a><a href='#L23'>23</a>
+<a name='L24'></a><a href='#L24'>24</a>
+<a name='L25'></a><a href='#L25'>25</a>
+<a name='L26'></a><a href='#L26'>26</a>
+<a name='L27'></a><a href='#L27'>27</a>
+<a name='L28'></a><a href='#L28'>28</a>
+<a name='L29'></a><a href='#L29'>29</a>
+<a name='L30'></a><a href='#L30'>30</a>
+<a name='L31'></a><a href='#L31'>31</a>
+<a name='L32'></a><a href='#L32'>32</a>
+<a name='L33'></a><a href='#L33'>33</a>
+<a name='L34'></a><a href='#L34'>34</a>
+<a name='L35'></a><a href='#L35'>35</a>
+<a name='L36'></a><a href='#L36'>36</a>
+<a name='L37'></a><a href='#L37'>37</a>
+<a name='L38'></a><a href='#L38'>38</a>
+<a name='L39'></a><a href='#L39'>39</a>
+<a name='L40'></a><a href='#L40'>40</a>
+<a name='L41'></a><a href='#L41'>41</a>
+<a name='L42'></a><a href='#L42'>42</a>
+<a name='L43'></a><a href='#L43'>43</a>
+<a name='L44'></a><a href='#L44'>44</a>
+<a name='L45'></a><a href='#L45'>45</a>
+<a name='L46'></a><a href='#L46'>46</a>
+<a name='L47'></a><a href='#L47'>47</a>
+<a name='L48'></a><a href='#L48'>48</a>
+<a name='L49'></a><a href='#L49'>49</a>
+<a name='L50'></a><a href='#L50'>50</a>
+<a name='L51'></a><a href='#L51'>51</a>
+<a name='L52'></a><a href='#L52'>52</a>
+<a name='L53'></a><a href='#L53'>53</a>
+<a name='L54'></a><a href='#L54'>54</a>
+<a name='L55'></a><a href='#L55'>55</a>
+<a name='L56'></a><a href='#L56'>56</a>
+<a name='L57'></a><a href='#L57'>57</a>
+<a name='L58'></a><a href='#L58'>58</a>
+<a name='L59'></a><a href='#L59'>59</a>
+<a name='L60'></a><a href='#L60'>60</a>
+<a name='L61'></a><a href='#L61'>61</a>
+<a name='L62'></a><a href='#L62'>62</a>
+<a name='L63'></a><a href='#L63'>63</a>
+<a name='L64'></a><a href='#L64'>64</a>
+<a name='L65'></a><a href='#L65'>65</a>
+<a name='L66'></a><a href='#L66'>66</a>
+<a name='L67'></a><a href='#L67'>67</a>
+<a name='L68'></a><a href='#L68'>68</a>
+<a name='L69'></a><a href='#L69'>69</a>
+<a name='L70'></a><a href='#L70'>70</a>
+<a name='L71'></a><a href='#L71'>71</a>
+<a name='L72'></a><a href='#L72'>72</a>
+<a name='L73'></a><a href='#L73'>73</a>
+<a name='L74'></a><a href='#L74'>74</a>
+<a name='L75'></a><a href='#L75'>75</a>
+<a name='L76'></a><a href='#L76'>76</a>
+<a name='L77'></a><a href='#L77'>77</a>
+<a name='L78'></a><a href='#L78'>78</a>
+<a name='L79'></a><a href='#L79'>79</a>
+<a name='L80'></a><a href='#L80'>80</a>
+<a name='L81'></a><a href='#L81'>81</a>
+<a name='L82'></a><a href='#L82'>82</a>
+<a name='L83'></a><a href='#L83'>83</a>
+<a name='L84'></a><a href='#L84'>84</a>
+<a name='L85'></a><a href='#L85'>85</a>
+<a name='L86'></a><a href='#L86'>86</a>
+<a name='L87'></a><a href='#L87'>87</a>
+<a name='L88'></a><a href='#L88'>88</a>
+<a name='L89'></a><a href='#L89'>89</a>
+<a name='L90'></a><a href='#L90'>90</a>
+<a name='L91'></a><a href='#L91'>91</a>
+<a name='L92'></a><a href='#L92'>92</a>
+<a name='L93'></a><a href='#L93'>93</a>
+<a name='L94'></a><a href='#L94'>94</a>
+<a name='L95'></a><a href='#L95'>95</a>
+<a name='L96'></a><a href='#L96'>96</a>
+<a name='L97'></a><a href='#L97'>97</a>
+<a name='L98'></a><a href='#L98'>98</a></td><td class="line-coverage quiet"><span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import {Model} from "@nozbe/watermelondb";
+import {field, immutableRelation, relation} from "@nozbe/watermelondb/decorators";
+import {Product} from "./product";
+import {makeSafeName} from "../../utils/helpers";
+&nbsp;
+export class Nutriment extends Model {
+    public static table = 'nutriments';
+    @immutableRelation('products', 'product_id') product?: Product;
+    @field(makeSafeName('calcium')) public calcium?: string;
+    @field(makeSafeName('calcium_100g')) public calcium_100g?: number;
+    @field(makeSafeName('calcium_serving')) public calcium_serving?: number;
+    @field(makeSafeName('calcium_unit')) public calcium_unit?: string;
+    @field(makeSafeName('calcium_value')) public calcium_value?: number;
+    @field(makeSafeName('carbohydrates')) public carbohydrates?: number;
+    @field(makeSafeName('carbohydrates_100g')) public carbohydrates_100g?: number;
+    @field(makeSafeName('carbohydrates_serving')) public carbohydrates_serving?: number;
+    @field(makeSafeName('carbohydrates_unit')) public carbohydrates_unit?: string;
+    @field(makeSafeName('carbohydrates_value')) public carbohydrates_value?: number;
+    @field(makeSafeName('cholesterol')) public cholesterol?: number;
+    @field(makeSafeName('cholesterol_100g')) public cholesterol_100g?: number;
+    @field(makeSafeName('cholesterol_serving')) public cholesterol_serving?: number;
+    @field(makeSafeName('cholesterol_unit')) public cholesterol_unit?: string;
+    @field(makeSafeName('cholesterol_value')) public cholesterol_value?: number;
+    @field(makeSafeName('energy')) public energy?: number;
+    @field(makeSafeName('energy-kcal')) public energy_kcal?: number;
+    @field(makeSafeName('energy-kcal_100g')) public energy_kcal_100g?: number;
+    @field(makeSafeName('energy-kcal_serving')) public energy_kcal_serving?: number;
+    @field(makeSafeName('energy-kcal_unit')) public energy_kcal_unit?: string;
+    @field(makeSafeName('energy-kcal_value')) public energy_kcal_value?: number;
+    @field(makeSafeName('energy-kcal_value_computed')) public energy_kcal_value_computed?: number;
+    @field(makeSafeName('energy_100g')) public energy_100g?: number;
+    @field(makeSafeName('energy_serving')) public energy_serving?: number;
+    @field(makeSafeName('energy_unit')) public energy_unit?: string;
+    @field(makeSafeName('energy_value')) public energy_value?: number;
+    @field(makeSafeName('fat')) public fat?: number;
+    @field(makeSafeName('fat_100g')) public fat_100g?: number;
+    @field(makeSafeName('fat_serving')) public fat_serving?: number;
+    @field(makeSafeName('fat_unit')) public fat_unit?: string;
+    @field(makeSafeName('fat_value')) public fat_value?: number;
+    @field(makeSafeName('fiber')) public fiber?: number;
+    @field(makeSafeName('fiber_100g')) public fiber_100g?: number;
+    @field(makeSafeName('fiber_serving')) public fiber_serving?: number;
+    @field(makeSafeName('fiber_unit')) public fiber_unit?: string;
+    @field(makeSafeName('fiber_value')) public fiber_value?: number;
+    @field(makeSafeName('fruits-vegetables-nuts-estimate-from-ingredients_100g')) public fruits_vegetables_nuts_estimate_from_ingredients_100g?: number;
+    @field(makeSafeName('fruits-vegetables-nuts-estimate-from-ingredients_serving')) public fruits_vegetables_nuts_estimate_from_ingredients_serving?: number;
+    @field(makeSafeName('iron')) public iron?: number;
+    @field(makeSafeName('iron_100g')) public iron_100g?: number;
+    @field(makeSafeName('iron_serving')) public iron_serving?: number;
+    @field(makeSafeName('iron_unit')) public iron_unit?: string;
+    @field(makeSafeName('iron_value')) public iron_value?: number;
+    @field(makeSafeName('nova-group')) public nova_group?: number;
+    @field(makeSafeName('nova-group_100g')) public nova_group_100g?: number;
+    @field(makeSafeName('nova-group_serving')) public nova_group_serving?: number;
+    @field(makeSafeName('nutrition-score-fr')) public nutrition_score_fr?: number;
+    @field(makeSafeName('nutrition-score-fr_100g')) public nutrition_score_fr_100g?: number;
+    @field(makeSafeName('proteins')) public proteins?: number;
+    @field(makeSafeName('proteins_100g')) public proteins_100g?: number;
+    @field(makeSafeName('proteins_serving')) public proteins_serving?: number;
+    @field(makeSafeName('proteins_unit')) public proteins_unit?: string;
+    @field(makeSafeName('proteins_value')) public proteins_value?: number;
+    @field(makeSafeName('salt')) public salt?: number;
+    @field(makeSafeName('salt_100g')) public salt_100g?: number;
+    @field(makeSafeName('salt_serving')) public salt_serving?: number;
+    @field(makeSafeName('salt_unit')) public salt_unit?: string;
+    @field(makeSafeName('salt_value')) public salt_value?: number;
+    @field(makeSafeName('saturated-fat')) public saturated_fat?: number;
+    @field(makeSafeName('saturated-fat_100g')) public saturated_fat_100g?: number;
+    @field(makeSafeName('saturated-fat_serving')) public saturated_fat_serving?: number;
+    @field(makeSafeName('saturated-fat_unit')) public saturated_fat_unit?: string;
+    @field(makeSafeName('saturated-fat_value')) public saturated_fat_value?: number;
+    @field(makeSafeName('sodium')) public sodium?: number;
+    @field(makeSafeName('sodium_100g')) public sodium_100g?: number;
+    @field(makeSafeName('sodium_serving')) public sodium_serving?: number;
+    @field(makeSafeName('sodium_unit')) public sodium_unit?: string;
+    @field(makeSafeName('sodium_value')) public sodium_value?: number;
+    @field(makeSafeName('sugars')) public sugars?: number;
+    @field(makeSafeName('sugars_100g')) public sugars_100g?: number;
+    @field(makeSafeName('sugars_serving')) public sugars_serving?: number;
+    @field(makeSafeName('sugars_unit')) public sugars_unit?: string;
+    @field(makeSafeName('sugars_value')) public sugars_value?: number;
+    @field(makeSafeName('trans-fat')) public trans_fat?: number;
+    @field(makeSafeName('trans-fat_100g')) public trans_fat_100g?: number;
+    @field(makeSafeName('trans-fat_serving')) public trans_fat_serving?: number;
+    @field(makeSafeName('trans-fat_unit')) public trans_fat_unit?: string;
+    @field(makeSafeName('trans-fat_value')) public trans_fat_value?: number;
+    @field(makeSafeName('vitamin-a')) public vitamin_a?: number;
+    @field(makeSafeName('vitamin-a_100g')) public vitamin_a_100g?: number;
+    @field(makeSafeName('vitamin-a_serving')) public vitamin_a_serving?: number;
+    @field(makeSafeName('vitamin-a_unit')) public vitamin_a_unit?: string;
+    @field(makeSafeName('vitamin-a_value')) public vitamin_a_value?: number;
+    @field(makeSafeName('vitamin-c')) public vitamin_c?: number;
+    @field(makeSafeName('vitamin-c_100g')) public vitamin_c_100g?: number;
+    @field(makeSafeName('vitamin-c_serving')) public vitamin_c_serving?: number;
+    @field(makeSafeName('vitamin-c_unit')) public vitamin_c_unit?: string;
+    @field(makeSafeName('vitamin-c_value')) public vitamin_c_value?: number;
+}
+&nbsp;</pre></td></tr></table></pre>
+
+                <div class='push'></div><!-- for sticky footer -->
+            </div><!-- /wrapper -->
+            <div class='footer quiet pad2 space-top1 center small'>
+                Code coverage generated by
+                <a href="https://istanbul.js.org/" target="_blank" rel="noopener noreferrer">istanbul</a>
+                at 2024-03-02T13:43:28.947Z
+            </div>
+        <script src="../../../../prettify.js"></script>
+        <script>
+            window.onload = function () {
+                prettyPrint();
+            };
+        </script>
+        <script src="../../../../sorter.js"></script>
+        <script src="../../../../block-navigation.js"></script>
+    </body>
+</html>
+    

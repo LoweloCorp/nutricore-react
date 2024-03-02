@@ -1,5 +1,6 @@
 {
   "expo": {
+    "owner": "rn2024",
     "name": "JobApp",
     "slug": "JobApp",
     "version": "1.0.0",
